@@ -1,0 +1,16 @@
+//you will need to put in your own firebase creds below and rename this file to ".firebase.js".
+
+import * as firebase from 'firebase'
+
+var config = {
+    apiKey: "EXAMPLEAPIKEY555555555555555555555", //REPLACE
+    authDomain: "example-55555.firebaseapp.com", //REPLACE
+    databaseURL: "https://example-55555.firebaseio.com", //REPLACE
+    projectId: "example-55555", //REPLACE
+    storageBucket: "example-55555.appspot.com", //REPLACE
+    messagingSenderId: "555555555555" //REPLACE
+  }
+  firebase.initializeApp(config)
+const database = firebase.database()
+
+export default database
